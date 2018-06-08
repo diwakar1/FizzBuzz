@@ -63,14 +63,17 @@ public class Main {
 
             fb = fb + " " + a[ind];
             ind++;
-            if(ind >4 ){
+            if (ind > 4) {
 
-                ind =0;
+                ind = 0;
 
             }
-
-
         }
+        if(i>20) {
+            fb = fb +" " +getLastDigit(i);
+        }
+
+
         return fb;
     }
 
@@ -84,7 +87,39 @@ public class Main {
         }
 
 
+
+    public static String getLastDigit( int a ) {
+
+        String od;
+
+
+        int   b = (Math.abs(a)%10);
+        String c = " ";
+
+        if (b == 0) c = "Zero";
+        if (b == 1) c = "one";
+        if (b == 2) c = "two";
+        if (b == 3) c = "three";
+        if (b == 4) c = "four";
+        if (b == 5) c = "five";
+        if (b == 6) c = "six";
+        if (b == 7) c = "seven";
+        if (b == 8) c = "eight";
+        if (b == 9) c = "nine";
+
+
+        if ((c.length() % 2 )== 0){
+            od = "Harry" ;
+        }else {
+            od = "potter";
+        }
+        return od;
+
+
     }
+}
+
+
 
 
 
