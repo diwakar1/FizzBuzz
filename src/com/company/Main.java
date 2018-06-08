@@ -15,7 +15,8 @@ public class Main {
                     int stor = random1;
                     random1 = random2;
                     random2 = stor;
-                } else if (random1 - random2 < 10) {
+                }
+                if ((random1 - random2) < 10) {
                     System.out.println("this won't take long");
 
                 }
@@ -57,7 +58,7 @@ public class Main {
  public static int getRandomNumber(){
      Random rand = new Random();
 
-        int num = rand.nextInt(100)+1;
+        int num = rand.nextInt(20)+1;
 
         return num;
  }
