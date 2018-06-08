@@ -47,6 +47,11 @@ public class Main {
                 fb = Integer.toString(i);
 
             }
+            if (i%7 == 0){
+
+                fb = fb+ " -This number is multiple of seven";
+
+            }
 
 
 
